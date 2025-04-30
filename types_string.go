@@ -115,6 +115,7 @@ func _() {
 	_ = x[SkLookup-30]
 	_ = x[Syscall-31]
 	_ = x[Netfilter-32]
+	_ = x[CGroupSyscall-33]
 	_ = x[WindowsXDP-268435457]
 	_ = x[WindowsBind-268435458]
 	_ = x[WindowsCGroupSockAddr-268435459]
@@ -124,20 +125,20 @@ func _() {
 }
 
 const (
-	_ProgramType_name_0 = "UnspecifiedProgramSocketFilterKprobeSchedCLSSchedACTTracePointXDPPerfEventCGroupSKBCGroupSockLWTInLWTOutLWTXmitSockOpsSkSKBCGroupDeviceSkMsgRawTracepointCGroupSockAddrLWTSeg6LocalLircMode2SkReuseportFlowDissectorCGroupSysctlRawTracepointWritableCGroupSockoptTracingStructOpsExtensionLSMSkLookupSyscallNetfilter"
+	_ProgramType_name_0 = "UnspecifiedProgramSocketFilterKprobeSchedCLSSchedACTTracePointXDPPerfEventCGroupSKBCGroupSockLWTInLWTOutLWTXmitSockOpsSkSKBCGroupDeviceSkMsgRawTracepointCGroupSockAddrLWTSeg6LocalLircMode2SkReuseportFlowDissectorCGroupSysctlRawTracepointWritableCGroupSockoptTracingStructOpsExtensionLSMSkLookupSyscallNetfilterCGroupSyscall"
 	_ProgramType_name_1 = "WindowsXDPWindowsBindWindowsCGroupSockAddrWindowsSockOps"
 	_ProgramType_name_2 = "WindowsXDPTestWindowsSample"
 )
 
 var (
-	_ProgramType_index_0 = [...]uint16{0, 18, 30, 36, 44, 52, 62, 65, 74, 83, 93, 98, 104, 111, 118, 123, 135, 140, 153, 167, 179, 188, 199, 212, 224, 245, 258, 265, 274, 283, 286, 294, 301, 310}
+	_ProgramType_index_0 = [...]uint16{0, 18, 30, 36, 44, 52, 62, 65, 74, 83, 93, 98, 104, 111, 118, 123, 135, 140, 153, 167, 179, 188, 199, 212, 224, 245, 258, 265, 274, 283, 286, 294, 301, 310, 323}
 	_ProgramType_index_1 = [...]uint8{0, 10, 21, 42, 56}
 	_ProgramType_index_2 = [...]uint8{0, 14, 27}
 )
 
 func (i ProgramType) String() string {
 	switch {
-	case i <= 32:
+	case i <= 33:
 		return _ProgramType_name_0[_ProgramType_index_0[i]:_ProgramType_index_0[i+1]]
 	case 268435457 <= i && i <= 268435460:
 		i -= 268435457
