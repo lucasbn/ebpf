@@ -211,7 +211,8 @@ const (
 	LSM                   = ProgramType(sys.BPF_PROG_TYPE_LSM)
 	SkLookup              = ProgramType(sys.BPF_PROG_TYPE_SK_LOOKUP)
 	Syscall               = ProgramType(sys.BPF_PROG_TYPE_SYSCALL)
-	Netfilter             = ProgramType(sys.BPF_PROG_TYPE_NETFILTER)
+	Netfilter              = ProgramType(sys.BPF_PROG_TYPE_NETFILTER)
+	CGroupSyscall         = ProgramType(sys.BPF_PROG_TYPE_CGROUP_SYSCALL)
 )
 
 // eBPF program types (Windows).
@@ -291,7 +292,7 @@ const (
 	AttachTraceKprobeSession         = AttachType(sys.BPF_TRACE_KPROBE_SESSION)
 	AttachLSMCgroup                  = AttachType(sys.BPF_LSM_CGROUP)
 	AttachStructOps                  = AttachType(sys.BPF_STRUCT_OPS)
-	AttachNetfilter                  = AttachType(sys.BPF_NETFILTER)
+	AttachNetfilter                   = AttachType(sys.BPF_NETFILTER)
 	AttachTCXIngress                 = AttachType(sys.BPF_TCX_INGRESS)
 	AttachTCXEgress                  = AttachType(sys.BPF_TCX_EGRESS)
 	AttachTraceUprobeMulti           = AttachType(sys.BPF_TRACE_UPROBE_MULTI)
@@ -302,6 +303,14 @@ const (
 	AttachCgroupUnixGetsockname      = AttachType(sys.BPF_CGROUP_UNIX_GETSOCKNAME)
 	AttachNetkitPrimary              = AttachType(sys.BPF_NETKIT_PRIMARY)
 	AttachNetkitPeer                 = AttachType(sys.BPF_NETKIT_PEER)
+	AttachCgroupSyscallSocket        = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET)
+	AttachCgroupSyscallSocketExit    = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET_EXIT)
+	AttachCgroupSyscallSendto        = AttachType(sys.BPF_CGROUP_SYSCALL_SENDTO)
+	AttachCgroupSyscallRecvmsg       = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG)
+	AttachCgroupSyscallRecvmsgExit   = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG_EXIT)
+	AttachCgroupSyscallBind          = AttachType(sys.BPF_CGROUP_SYSCALL_BIND)
+	AttachCgroupSyscallSetsockopt    = AttachType(sys.BPF_CGROUP_SYSCALL_SETSOCKOPT)
+	AttachCgroupSyscallGetsockname   = AttachType(sys.BPF_CGROUP_SYSCALL_GETSOCKNAME)
 )
 
 // Attach types (Windows).
