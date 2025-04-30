@@ -114,6 +114,7 @@ var elfSectionDefs = []libbpfElfSectionDef{
 	{"cgroup/syscall_bind", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_BIND, _SEC_ATTACHABLE},
 	{"cgroup/syscall_setsockopt", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_SETSOCKOPT, _SEC_ATTACHABLE},
 	{"cgroup/syscall_getsockname", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_GETSOCKNAME, _SEC_ATTACHABLE},
+	{"cgroup/syscall_connect", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_CONNECT, _SEC_ATTACHABLE},
 	{"struct_ops+", sys.BPF_PROG_TYPE_STRUCT_OPS, 0, _SEC_NONE},
 	{"struct_ops.s+", sys.BPF_PROG_TYPE_STRUCT_OPS, 0, _SEC_SLEEPABLE},
 	{"sk_lookup", sys.BPF_PROG_TYPE_SK_LOOKUP, sys.BPF_SK_LOOKUP, _SEC_ATTACHABLE},

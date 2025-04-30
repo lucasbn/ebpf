@@ -311,6 +311,7 @@ const (
 	AttachCgroupSyscallBind          = AttachType(sys.BPF_CGROUP_SYSCALL_BIND)
 	AttachCgroupSyscallSetsockopt    = AttachType(sys.BPF_CGROUP_SYSCALL_SETSOCKOPT)
 	AttachCgroupSyscallGetsockname   = AttachType(sys.BPF_CGROUP_SYSCALL_GETSOCKNAME)
+	AttachCgroupSyscallConnect       = AttachType(sys.BPF_CGROUP_SYSCALL_CONNECT)
 )
 
 // Attach types (Windows).

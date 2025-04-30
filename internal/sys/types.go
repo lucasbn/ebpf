@@ -259,7 +259,8 @@ const (
 	BPF_CGROUP_SYSCALL_BIND            AttachType = 63
 	BPF_CGROUP_SYSCALL_SETSOCKOPT      AttachType = 64
 	BPF_CGROUP_SYSCALL_GETSOCKNAME     AttachType = 65
-	__MAX_BPF_ATTACH_TYPE              AttachType = 66
+	BPF_CGROUP_SYSCALL_CONNECT         AttachType = 66
+	__MAX_BPF_ATTACH_TYPE              AttachType = 67
 )
 
 type Cmd uint32
