@@ -312,6 +312,7 @@ const (
 	AttachCgroupSyscallSetsockopt    = AttachType(sys.BPF_CGROUP_SYSCALL_SETSOCKOPT)
 	AttachCgroupSyscallGetsockname   = AttachType(sys.BPF_CGROUP_SYSCALL_GETSOCKNAME)
 	AttachCgroupSyscallConnect       = AttachType(sys.BPF_CGROUP_SYSCALL_CONNECT)
+	AttachCgroupSyscallAcceptExit    = AttachType(sys.BPF_CGROUP_SYSCALL_ACCEPT_EXIT)
 )
 
 // Attach types (Windows).
