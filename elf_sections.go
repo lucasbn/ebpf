@@ -108,6 +108,7 @@ var elfSectionDefs = []libbpfElfSectionDef{
 	{"cgroup/dev", sys.BPF_PROG_TYPE_CGROUP_DEVICE, sys.BPF_CGROUP_DEVICE, _SEC_ATTACHABLE_OPT},
 	{"cgroup/syscall_socket", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_SOCKET, _SEC_ATTACHABLE},
 	{"cgroup/syscall_socket_exit", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_SOCKET_EXIT, _SEC_ATTACHABLE},
+	{"cgroup/syscall_sendmsg", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_SENDMSG, _SEC_ATTACHABLE},
 	{"cgroup/syscall_sendto", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_SENDTO, _SEC_ATTACHABLE},
 	{"cgroup/syscall_recvmsg", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_RECVMSG, _SEC_ATTACHABLE},
 	{"cgroup/syscall_recvmsg_exit", sys.BPF_PROG_TYPE_CGROUP_SYSCALL, sys.BPF_CGROUP_SYSCALL_RECVMSG_EXIT, _SEC_ATTACHABLE},
@@ -121,3 +122,4 @@ var elfSectionDefs = []libbpfElfSectionDef{
 	{"sk_lookup", sys.BPF_PROG_TYPE_SK_LOOKUP, sys.BPF_SK_LOOKUP, _SEC_ATTACHABLE},
 	{"netfilter", sys.BPF_PROG_TYPE_NETFILTER, sys.BPF_NETFILTER, _SEC_NONE},
 }
+

@@ -305,6 +305,7 @@ const (
 	AttachNetkitPeer                 = AttachType(sys.BPF_NETKIT_PEER)
 	AttachCgroupSyscallSocket        = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET)
 	AttachCgroupSyscallSocketExit    = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET_EXIT)
+	AttachCgroupSyscallSendmsg        = AttachType(sys.BPF_CGROUP_SYSCALL_SENDMSG)
 	AttachCgroupSyscallSendto        = AttachType(sys.BPF_CGROUP_SYSCALL_SENDTO)
 	AttachCgroupSyscallRecvmsg       = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG)
 	AttachCgroupSyscallRecvmsgExit   = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG_EXIT)
