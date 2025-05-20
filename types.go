@@ -211,7 +211,7 @@ const (
 	LSM                   = ProgramType(sys.BPF_PROG_TYPE_LSM)
 	SkLookup              = ProgramType(sys.BPF_PROG_TYPE_SK_LOOKUP)
 	Syscall               = ProgramType(sys.BPF_PROG_TYPE_SYSCALL)
-	Netfilter              = ProgramType(sys.BPF_PROG_TYPE_NETFILTER)
+	Netfilter             = ProgramType(sys.BPF_PROG_TYPE_NETFILTER)
 	CGroupSyscall         = ProgramType(sys.BPF_PROG_TYPE_CGROUP_SYSCALL)
 )
 
@@ -292,7 +292,7 @@ const (
 	AttachTraceKprobeSession         = AttachType(sys.BPF_TRACE_KPROBE_SESSION)
 	AttachLSMCgroup                  = AttachType(sys.BPF_LSM_CGROUP)
 	AttachStructOps                  = AttachType(sys.BPF_STRUCT_OPS)
-	AttachNetfilter                   = AttachType(sys.BPF_NETFILTER)
+	AttachNetfilter                  = AttachType(sys.BPF_NETFILTER)
 	AttachTCXIngress                 = AttachType(sys.BPF_TCX_INGRESS)
 	AttachTCXEgress                  = AttachType(sys.BPF_TCX_EGRESS)
 	AttachTraceUprobeMulti           = AttachType(sys.BPF_TRACE_UPROBE_MULTI)
@@ -305,7 +305,7 @@ const (
 	AttachNetkitPeer                 = AttachType(sys.BPF_NETKIT_PEER)
 	AttachCgroupSyscallSocket        = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET)
 	AttachCgroupSyscallSocketExit    = AttachType(sys.BPF_CGROUP_SYSCALL_SOCKET_EXIT)
-	AttachCgroupSyscallSendmsg        = AttachType(sys.BPF_CGROUP_SYSCALL_SENDMSG)
+	AttachCgroupSyscallSendmsg       = AttachType(sys.BPF_CGROUP_SYSCALL_SENDMSG)
 	AttachCgroupSyscallSendto        = AttachType(sys.BPF_CGROUP_SYSCALL_SENDTO)
 	AttachCgroupSyscallRecvmsg       = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG)
 	AttachCgroupSyscallRecvmsgExit   = AttachType(sys.BPF_CGROUP_SYSCALL_RECVMSG_EXIT)
@@ -314,6 +314,7 @@ const (
 	AttachCgroupSyscallGetsockname   = AttachType(sys.BPF_CGROUP_SYSCALL_GETSOCKNAME)
 	AttachCgroupSyscallConnect       = AttachType(sys.BPF_CGROUP_SYSCALL_CONNECT)
 	AttachCgroupSyscallAcceptExit    = AttachType(sys.BPF_CGROUP_SYSCALL_ACCEPT_EXIT)
+	AttachCgroupSyscallUname         = AttachType(sys.BPF_CGROUP_SYSCALL_UNAME)
 )
 
 // Attach types (Windows).
